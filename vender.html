@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vende tu Auto - AutoAndo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #003366;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario para vender tu auto</h1>
+  <form>
+    <label>Marca:</label>
+    <input type="text" name="marca" required>
+
+    <label>Modelo:</label>
+    <input type="text" name="modelo" required>
+
+    <label>Año:</label>
+    <input type="number" name="anio" required>
+
+    <label>Precio estimado (USD):</label>
+    <input type="number" name="precio" required>
+
+    <label>Descripción del vehículo:</label>
+    <textarea rows="4"></textarea>
+
+    <label>Sube fotos del auto:</label>
+    <input type="file" name="fotos" multiple accept="image/*">
+
+    <button type="submit">Publicar auto</button>
+  </form>
+</body>
+</html>
 
